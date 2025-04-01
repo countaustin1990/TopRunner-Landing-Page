@@ -1,0 +1,52 @@
+@tailwind  base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+  --light-purple: #f5f3ff;
+}
+
+body {
+  @apply antialiased bg-gradient-to-br from-white to-purple-50;
+}
+
+.floating-card {
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.floating-card-delay-1 {
+  animation-delay: 1s;
+}
+
+.floating-card-delay-2 {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.circular-progress {
+  transform: rotate(-90deg);
+}
+
+.btn-primary {
+  @apply bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-full font-semibold transition-all flex items-center justify-center;
+}
+
+.btn-secondary {
+  @apply bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold transition-all shadow-sm flex items-center justify-center;
+}
+ 
