@@ -43,7 +43,7 @@ const DraggableCard: React.FC<FloatingCardProps> = ({ title, content, className 
 
   return (
     <div
-      className={`fixed cursor-grab active:cursor-grabbing bg-white/150 backdrop-blur-sm rounded-xl shadow-lg p-4 w-56 border border-white/40 ${className}`}
+      className={`fixed cursor-grab active:cursor-grabbing bg-white/150 backdrop-blur-sm rounded-xl shadow-sm p-4 w-56 border border-white/40 ${className}`}
       style={{ left: `${position.x}px`, top: `${position.y}px`, transform: "translate(-50%, -50%)" }}
       onMouseDown={handleMouseDown}
     >

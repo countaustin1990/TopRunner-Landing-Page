@@ -1,6 +1,6 @@
 import  { ArrowRight, BarChart2, Calendar, Check, ChevronRight, Clock, Database, FileText, Rocket, Search } from 'lucide-react';
 import Navbar from './components/Navbar';
-import FloatingCaard from './components/FloatingCaard.test';
+import FloatingCard from './components/FloatingCard';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         {/* Hero Section */}
         <section className="relative px-4 pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
           {/* Floating Card for SEO Score */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute top-40 -left-10 md:left-20 lg:left-40 z-10 floating-card"
             title="SEO Content Score"
             content={
@@ -33,7 +33,7 @@ function App() {
           />
           
           {/* Floating Card for Keywords */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute -bottom-5 -left-10 md:left-12 z-10 floating-card floating-card-delay-1"
             title="Power keywords"
             content={
@@ -45,8 +45,8 @@ function App() {
           />
           
           {/* Floating Card for Publishing */}
-          <FloatingCaard 
-            className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
+          <FloatingCard 
+            className="absolute -right-10 top-60 md:right-20 lg:right-20 z-10 floating-card floating-card-delay-2"
             title="SEO Analytics"
             content={
               <div className="flex items-center justify-center">
@@ -60,8 +60,8 @@ function App() {
           />
           
           {/* Floating Card for Blog Posts */}
-          <FloatingCaard 
-            className="absolute bottom-10 right-5 md:right-32 z-10 floating-card"
+          <FloatingCard 
+            className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
             title="How to write blog posts"
             content={
               <div className="space-y-2">
@@ -299,7 +299,7 @@ function App() {
           <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <Rocket className="w-6 h-6 text-violet-600 mr-2" />
-              <span className="font-semibold text-gray-900">TopRunner</span>
+              <span className="font-semibold text-violet-600">TopRunner</span>
             </div>
             <div className="text-gray-500 text-sm">
               © {new Date().getFullYear()} TopRunner. All rights reserved.

@@ -1,6 +1,6 @@
 import  { ArrowRight, BarChart2, Calendar, Check, ChevronRight, Clock, Database, FileText, Rocket, Search } from 'lucide-react';
 import Navbar from './components/Navbar';
-import FloatingCard from './components/FloatingCard.test';
+import FloatingCard from './components/FloatingCard';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         {/* Hero Section */}
         <section className="relative px-4 pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
           {/* Floating Card for SEO Score */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute top-40 -left-10 md:left-20 lg:left-40 z-10 floating-card"
             title="SEO Content Score"
             content={
@@ -33,7 +33,7 @@ function App() {
           />
           
           {/* Floating Card for Keywords */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute -bottom-5 -left-10 md:left-12 z-10 floating-card floating-card-delay-1"
             title="Power keywords"
             content={
@@ -45,7 +45,7 @@ function App() {
           />
           
           {/* Floating Card for Publishing */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
             title="SEO Analytics"
             content={
@@ -60,7 +60,7 @@ function App() {
           />
           
           {/* Floating Card for Blog Posts */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
             title="How to write blog posts"
             content={

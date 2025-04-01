@@ -1,6 +1,6 @@
 import  { ArrowRight, BarChart2, Calendar, Check, ChevronRight, Clock, Database, FileText, Rocket, Search } from 'lucide-react';
 import Navbar from './components/Navbar';
-import FloatingCaard from './components/FloatingCaard.test';
+import FloatingCard from './components/FloatingCard';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         {/* Hero Section */}
         <section className="relative px-4 pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
           {/* Floating Card for SEO Score */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute top-40 -left-10 md:left-20 lg:left-40 z-10 floating-card"
             title="SEO Content Score"
             content={
@@ -32,21 +32,22 @@ function App() {
             }
           />
           
-          {/* Floating Card for Keywords */}
-          <FloatingCaard 
+          {/* Floating Card for Keywords 
+          <FloatingCard 
             className="absolute -bottom-5 -left-10 md:left-12 z-10 floating-card floating-card-delay-1"
             title="Power keywords"
             content={
-              <div className="flex flex-col gap-2">
-                <div className="bg-purple-100/80 text-purple-800 px-3 py-1 rounded-full text-xs">content marketing</div>
-                <div className="bg-blue-100/80 text-blue-800 px-3 py-1 rounded-full text-xs">SEO automation</div>
+              <div className="flex flex-col gap-1"> 
+                <div className="bg-purple-100/80 text-purple-800 px-2 py-0.5 rounded-full text-xs">content marketing</div> 
+                <div className="bg-blue-100/80 text-blue-800 px-2 py-0.5 rounded-full text-xs">SEO automation</div> 
               </div>
             }
-          />
+          />*/}
+
           
           {/* Floating Card for Publishing */}
-          <FloatingCaard 
-            className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
+          <FloatingCard 
+            className="absolute -right-10 top-60 md:right-20 lg:right-20 z-10 floating-card floating-card-delay-2"
             title="SEO Analytics"
             content={
               <div className="flex items-center justify-center">
@@ -60,7 +61,7 @@ function App() {
           />
           
           {/* Floating Card for Blog Posts */}
-          <FloatingCaard 
+          <FloatingCard 
             className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
             title="How to write blog posts"
             content={

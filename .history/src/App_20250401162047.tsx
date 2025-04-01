@@ -61,7 +61,7 @@ function App() {
           
           {/* Floating Card for Blog Posts */}
           <FloatingCard 
-            className="absolute bottom-10 right-5 md:right-32 z-10 floating-card"
+            className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
             title="How to write blog posts"
             content={
               <div className="space-y-2">
@@ -299,7 +299,7 @@ function App() {
           <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <Rocket className="w-6 h-6 text-violet-600 mr-2" />
-              <span className="font-semibold text-gray-900">TopRunner</span>
+              <span className="font-semibold text-violet-600">TopRunner</span>
             </div>
             <div className="text-gray-500 text-sm">
               © {new Date().getFullYear()} TopRunner. All rights reserved.

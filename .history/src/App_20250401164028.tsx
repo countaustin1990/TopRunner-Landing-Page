@@ -1,6 +1,6 @@
 import  { ArrowRight, BarChart2, Calendar, Check, ChevronRight, Clock, Database, FileText, Rocket, Search } from 'lucide-react';
 import Navbar from './components/Navbar';
-import FloatingCard from './components/FloatingCaard.test';
+import FloatingCard from './components/FloatingCard';
 
 function App() {
   return (
@@ -34,19 +34,20 @@ function App() {
           
           {/* Floating Card for Keywords */}
           <FloatingCard 
-            className="absolute -bottom-5 -left-10 md:left-12 z-10 floating-card floating-card-delay-1"
+            className="absolute -right-10 top-60 md:right-20 lg:right-20 z-10 floating-card floating-card-delay-2"
             title="Power keywords"
             content={
-              <div className="flex flex-col gap-2">
-                <div className="bg-purple-100/80 text-purple-800 px-3 py-1 rounded-full text-xs">content marketing</div>
-                <div className="bg-blue-100/80 text-blue-800 px-3 py-1 rounded-full text-xs">SEO automation</div>
+              <div className="flex flex-col gap-1"> 
+                <div className="bg-purple-100/80 text-purple-800  px-5 py-6 rounded-full text-xs">content marketing</div> 
+                <div className="bg-blue-100/80 text-blue-800 w-24 h-24 rounded-full text-xs">SEO automation</div> 
               </div>
             }
           />
+
           
           {/* Floating Card for Publishing */}
           <FloatingCard 
-            className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
+            className="absolute -right-10 top-60 md:right-20 lg:right-20 z-10 floating-card floating-card-delay-2"
             title="SEO Analytics"
             content={
               <div className="flex items-center justify-center">
@@ -61,7 +62,7 @@ function App() {
           
           {/* Floating Card for Blog Posts */}
           <FloatingCard 
-            className="absolute bottom-10 right-5 md:right-32 z-10 floating-card"
+            className="absolute -right-10 top-60 md:right-20 lg:right-40 z-10 floating-card floating-card-delay-2"
             title="How to write blog posts"
             content={
               <div className="space-y-2">
@@ -299,7 +300,7 @@ function App() {
           <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <Rocket className="w-6 h-6 text-violet-600 mr-2" />
-              <span className="font-semibold text-gray-900">TopRunner</span>
+              <span className="font-semibold text-violet-600">TopRunner</span>
             </div>
             <div className="text-gray-500 text-sm">
               © {new Date().getFullYear()} TopRunner. All rights reserved.
